@@ -1,10 +1,9 @@
-array = [55, 4444, 9992, 2342, 11, 769, 384, 211, 5594, ];
+array = [55, 4444, 9992, 2342, 11, 769, 384, 211, 5594];
 
 function InsertionSort(UnsortedArray) {
     let temp;
     for (let i = 0; i <= UnsortedArray.length - 1; i++) {
         temp = UnsortedArray[i];
-        console.log(temp);
         for (let j = i - 1; j >= -1; j--) {
             //find position
                 if (UnsortedArray[j] >= temp) {
@@ -16,11 +15,8 @@ function InsertionSort(UnsortedArray) {
                     break
                 }
         }
-        console.log(UnsortedArray);
     }
     return UnsortedArray;
 }
-
-
 
 InsertionSort(array);
